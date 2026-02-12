@@ -17,4 +17,4 @@ def start_scheduler(appointments):
                 appt.reminded = True
                 save_appointments(appointments)
 
-        time.sleep(15)  # Check every 30 seconds
+        time.sleep(15)  # Check every 15 seconds
