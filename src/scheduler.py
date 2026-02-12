@@ -1,3 +1,4 @@
+print("Scheduler file imported")
 import time
 from datetime import datetime
 from storage import save_appointments
