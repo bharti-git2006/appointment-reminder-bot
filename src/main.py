@@ -35,7 +35,11 @@ def main():
     appointments = load_appointments()
 
     # Start scheduler in background thread
-    scheduler_thread = threading.Thread(target=start_scheduler, args=(appointments,), daemon=True)
+    scheduler_thread = threading.Thread(
+        target=start_scheduler,
+        args=(appointments,),
+        daemon=True
+    )
     scheduler_thread.start()
 
     while True:
@@ -49,4 +53,12 @@ def main():
         if choice == "1":
             add_appointment(appointments)
         elif choice == "2":
-            view_appointments(appointment_
+            view_appointments(appointments)
+        elif choice == "3":
+            print("Exiting...")
+            break
+        else:
+            print("Invalid option.\n")
+
+if __name__ == "__main__":
+    main()
