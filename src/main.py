@@ -1,4 +1,3 @@
-print("THIS MAIN FILE IS RUNNING")
 from models import Appointment
 from storage import load_appointments, save_appointments
 from scheduler import start_scheduler
@@ -35,7 +34,7 @@ def view_appointments(appointments):
 def main():
     appointments = load_appointments()
 
-    # Start scheduler in background thread
+    # Start reminder system in background
     scheduler_thread = threading.Thread(
         target=start_scheduler,
         args=(appointments,),
@@ -44,7 +43,7 @@ def main():
     scheduler_thread.start()
 
     while True:
-        print("==== Appointment Reminder Bot ====")
+        print("\n==== Appointment Reminder Bot ====")
         print("1. Add Appointment")
         print("2. View Appointments")
         print("3. Exit")
@@ -59,7 +58,7 @@ def main():
             print("Exiting...")
             break
         else:
-            print("Invalid option.\n")
+            print("Invalid option. Try again.\n")
 
 if __name__ == "__main__":
     main()
