@@ -1,3 +1,4 @@
+print("THIS MAIN FILE IS RUNNING")
 from models import Appointment
 from storage import load_appointments, save_appointments
 from scheduler import start_scheduler
