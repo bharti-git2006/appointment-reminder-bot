@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Society Meeting",
+        "date": "2023-02-26",
+        "time": "12:00",
+        "reminded": true
+    },
+    {
+        "title": "Event Planning",
+        "date": "2026-03-02",
+        "time": "11:30",
+        "reminded": false
+    },
+    {
+        "title": "club Meeting",
+        "date": "2026-02-12",
+        "time": "19:47",
+        "reminded": true
+    },
+    {
+        "title": "Webinar",
+        "date": "2026-02-12",
+        "time": "21:12",
+        "reminded": true
+    }
+]
