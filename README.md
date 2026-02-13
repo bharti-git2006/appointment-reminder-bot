@@ -45,7 +45,5 @@ appointment-reminder-bot/
 -GUI version
 -Email notifications
 -SMS integration
-
-Web version with Flask
-
-Notification sound alerts
+-Web version with Flask
+-Notification sound alerts
