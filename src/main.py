@@ -34,6 +34,7 @@ def view_appointments(appointments):
 def main():
     appointments = load_appointments()
 
+    # Start reminder system in background
     scheduler_thread = threading.Thread(
         target=start_scheduler,
         args=(appointments,),
